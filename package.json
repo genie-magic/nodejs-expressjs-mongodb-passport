@@ -1,0 +1,55 @@
+{
+  "name": "kryptalgo_backend",
+  "version": "1.0.0",
+  "description": "Kryptalgo backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf disk",
+    "dev:build": "npm run clean && webpack -w",
+    "dev": "cross-env NODE_ENV=development nodemon dist/index.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://genie-magic@bitbucket.org/kryptalgo/backend-app.git"
+  },
+  "keywords": [
+    "kryptalgo",
+    "node.js",
+    "express.js",
+    "mongoose",
+    "backend"
+  ],
+  "author": "Genie Magic",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/kryptalgo/backend-app#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.15.0",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.16",
+    "passport": "^0.3.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.10.0",
+    "eslint-config-node": "^4.0.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.8",
+    "rimraf": "^2.6.2",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
